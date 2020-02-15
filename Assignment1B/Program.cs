@@ -4,12 +4,18 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Assignment1B
+namespace Bookshelf
 {
-    class Program
+    class Shelf
     {
         static void Main(string[] args)
         {
-        }
-    }
-}
+        }//main
+    }//class shelf
+    
+    class Book
+    {
+
+    }//class book
+
+}//namespace
