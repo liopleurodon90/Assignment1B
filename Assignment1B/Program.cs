@@ -18,6 +18,10 @@ namespace Bookshelf
             Console.WriteLine("**********************************"); //division spacing
             Console.WriteLine(); //spacing
             bookObj.DisplayBookInfo(); //display
+            Console.WriteLine(); //spacing
+            Console.WriteLine("**********************************"); //division spacing
+            Console.WriteLine("Press enter to exit");//exit dialogue
+            Console.ReadLine(); //message stays on screen until key pressed
         }//main
     }//class shelf
 
