@@ -13,9 +13,7 @@ namespace Bookshelf
             Book bookObj = new Book(); //create an object of class Book
 
             bookObj.Start(); //use object Book
-            bookObj.ReadAuthor();  //ask for author
-            bookObj.ReadPubYear(); //ask for pub year
-            bookObj.ReadFiction(); //ask for fiction
+            bookObj.ReadAndSaveBookInfo();  //ask for info
             Console.WriteLine(); //spacing
             Console.WriteLine("**********************************"); //division spacing
             Console.WriteLine(); //spacing
@@ -62,9 +60,16 @@ namespace Bookshelf
             { isFiction = false; }
             }//fiction
 
+            public void ReadAndSaveBookInfo()//gathers together the three mini methods to be called from one
+            {
+            ReadAuthor();
+            ReadPubYear();
+            ReadFiction();
+            }//read info
+
             public void DisplayBookInfo()
             {
-
+             
             }//display
 
         }//class book
