@@ -39,7 +39,7 @@ namespace Bookshelf
 
             public void ReadAuthor()
             {
-            Console.WriteLine(*******************); //gives dividing line
+            Console.WriteLine("*******************"); //gives dividing line
             Console.WriteLine("Please enter the book's author     "); //asks author
             author = Console.ReadLine(); //sets author value
             }//author
@@ -48,7 +48,7 @@ namespace Bookshelf
             {
             Console.Write("What year was the book published?    ");
             string textValue = Console.ReadLine(); //read response to pubyear q
-            age = int.Parse(textValue); //convert string to number
+            pubYear = int.Parse(textValue); //convert string to number
             }//pubyear
 
             public void ReadFiction()
@@ -70,8 +70,8 @@ namespace Bookshelf
 
             public void DisplayBookInfo()
             {
-             string authorOut = "Author: +author+"
-             string pubyearOut = "Year of publication: +pubyear+"
+            string authorOut = "Author: +author+";
+            string pubyearOut = "Year of publication: +pubyear+";
             
              Console.WriteLine(authorOut); //print author
              Console.WriteLine(pubyearOut); //print pubyear
