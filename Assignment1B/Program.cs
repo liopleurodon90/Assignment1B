@@ -12,7 +12,7 @@ namespace Bookshelf
         {
             Console.BackgroundColor = ConsoleColor.Gray;//Set up the display window
             Console.Clear(); //background is now that colour
-            Console.ForegroundColor = ConsoleColor.DarkGreen;
+            Console.ForegroundColor = ConsoleColor.DarkGreen; //sets font colour
             Console.Title = "Library"; //app title
 
 
@@ -27,7 +27,7 @@ namespace Bookshelf
             bookObj.DisplayBookInfo(); //display
             Console.WriteLine(); //spacing
             Console.WriteLine("**********************************"); //division spacing
-            Console.WriteLine("Press enter to exit");//exit dialogue
+            Console.WriteLine("Press enter to exit.");//exit dialogue
             Console.ReadLine(); //message stays on screen until key pressed
         }//main
     }//class shelf
@@ -50,9 +50,9 @@ namespace Bookshelf
 
             public void ReadAuthor()
             {
-            Console.WriteLine("*****************************"); //gives dividing line
-            Console.WriteLine("Please enter the book's author     "); //asks author
-            author = Console.ReadLine(); //sets author value
+            Console.WriteLine("**********************************"); //gives dividing line
+            Console.WriteLine("Please enter the book's author    "); //asks author
+            author = Console.ReadLine(); //sets author value. it is already a string so no need to convert
             }//author
 
             public void ReadPubYear()
@@ -64,7 +64,7 @@ namespace Bookshelf
 
             public void ReadFiction()
             {
-            Console.Write("Is the book fiction? Y/N ");
+            Console.Write("Is the book fiction?  (Y/N) ");
             char response = char.Parse(Console.ReadLine()); //what characters does the answer contain
             if ((response == 'y') || (response == 'Y')) // y or Y means true
             { isFiction = true; }
