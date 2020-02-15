@@ -18,7 +18,7 @@ namespace Bookshelf
 
             Book bookObj = new Book(); //create an object of class Book
 
-            bookObj.Start(); //use object Book
+            bookObj.Start(); //use object Book, do start dialogue
             Console.WriteLine(); //spacing
             bookObj.ReadAndSaveBookInfo();  //ask for info
             Console.WriteLine(); //spacing
