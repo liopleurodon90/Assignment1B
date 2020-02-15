@@ -74,8 +74,8 @@ namespace Bookshelf
 
             public void DisplayBookInfo()
             {
-            string authorOut = "Author: +author+";
-            string pubyearOut = "Year of publication: +pubyear+";
+            string authorOut = "Author: "+author+"";
+            string pubyearOut = "Year of publication: "+pubYear+"";
             
              Console.WriteLine(authorOut); //print author
              Console.WriteLine(pubyearOut); //print pubyear
