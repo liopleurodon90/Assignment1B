@@ -10,6 +10,12 @@ namespace Bookshelf
     {
         static void Main(string[] args)
         {
+            Console.BackgroundColor = ConsoleColor.Gray;//Set up the display window
+            Console.Clear(); //background is now that colour
+            Console.ForegroundColor = ConsoleColor.DarkGreen;
+            Console.Title = "Library"; //app title
+
+
             Book bookObj = new Book(); //create an object of class Book
 
             bookObj.Start(); //use object Book
