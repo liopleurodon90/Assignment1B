@@ -14,9 +14,15 @@ namespace Bookshelf
 
             bookObj.Start(); //use object Book
             bookObj.ReadAuthor();  //ask for author
-            bookObj.ReadPubYear();
+            bookObj.ReadPubYear(); //ask for pub year
+            bookObj.ReadFiction(); //ask for fiction
+            Console.WriteLine(); //spacing
+            Console.WriteLine("**********************************"); //division spacing
+            Console.WriteLine(); //spacing
         }//main
     }//class shelf
+
+
     
     class Book
     {
@@ -45,6 +51,21 @@ namespace Bookshelf
             string textValue = Console.ReadLine(); //read response to pubyear q
             age = int.Parse(textValue); //convert string to number
             }//pubyear
+
+            public void ReadFiction()
+            {
+            Console.Write("Is the book fiction? Y/N ");
+            char response = char.Parse(Console.ReadLine()); //what characters does the answer contain
+            if ((response == 'y') || (response == 'Y')) // y or Y means true
+            { isFiction = true; }
+            else
+            { isFiction = false; }
+            }//fiction
+
+            public void DisplayBookInfo()
+            {
+
+            }//display
 
         }//class book
 
