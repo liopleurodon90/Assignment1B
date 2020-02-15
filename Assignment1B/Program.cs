@@ -14,6 +14,7 @@ namespace Bookshelf
 
             bookObj.Start(); //use object Book
             bookObj.ReadAuthor();  //ask for author
+            bookObj.ReadPubYear();
         }//main
     }//class shelf
     
@@ -23,21 +24,27 @@ namespace Bookshelf
         private int pubYear; //year of publication
         private bool isFiction; //true if fiction false if nonfiction
 
-        public void Start()
-        {
+            public void Start()
+            {
             Console.WriteLine(); //gives blank line
             Console.WriteLine("Welcome to your library!"); //greetings from this project
             Console.WriteLine(); //gives blank line
 
-        }//start
+            }//start
 
-        public void ReadAuthor()
-        {
+            public void ReadAuthor()
+            {
             Console.WriteLine(*******************); //gives dividing line
             Console.WriteLine("Please enter the book's author     "); //asks author
             author = Console.ReadLine(); //sets author value
-        }
+            }//author
 
+            public void ReadPubYear()
+            {
+            Console.Write("What year was the book published?    ");
+            string textValue = Console.ReadLine(); //read response to pubyear q
+            age = int.Parse(textValue); //convert string to number
+            }//pubyear
 
         }//class book
 
