@@ -13,6 +13,7 @@ namespace Bookshelf
             Book bookObj = new Book(); //create an object of class Book
 
             bookObj.Start(); //use object Book
+            Console.WriteLine(); //spacing
             bookObj.ReadAndSaveBookInfo();  //ask for info
             Console.WriteLine(); //spacing
             Console.WriteLine("**********************************"); //division spacing
@@ -43,7 +44,7 @@ namespace Bookshelf
 
             public void ReadAuthor()
             {
-            Console.WriteLine("*******************"); //gives dividing line
+            Console.WriteLine("*****************************"); //gives dividing line
             Console.WriteLine("Please enter the book's author     "); //asks author
             author = Console.ReadLine(); //sets author value
             }//author
@@ -74,8 +75,8 @@ namespace Bookshelf
 
             public void DisplayBookInfo()
             {
-            string authorOut = "Author: "+author+"";
-            string pubyearOut = "Year of publication: "+pubYear+"";
+            string authorOut = "Author: "+author+""; //create string authorOut
+            string pubyearOut = "Year of publication: "+pubYear+""; //create string pubyearOut
             
              Console.WriteLine(authorOut); //print author
              Console.WriteLine(pubyearOut); //print pubyear
