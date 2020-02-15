@@ -17,6 +17,7 @@ namespace Bookshelf
             Console.WriteLine(); //spacing
             Console.WriteLine("**********************************"); //division spacing
             Console.WriteLine(); //spacing
+            bookObj.DisplayBookInfo(); //display
         }//main
     }//class shelf
 
@@ -69,8 +70,20 @@ namespace Bookshelf
 
             public void DisplayBookInfo()
             {
-             
-            }//display
+             string authorOut = "Author: +author+"
+             string pubyearOut = "Year of publication: +pubyear+"
+            
+             Console.WriteLine(authorOut); //print author
+             Console.WriteLine(pubyearOut); //print pubyear
+    
+              if
+                 (isFiction == true) //check value of bool
+                Console.WriteLine("This book should be shelved with fiction.");
+             if
+                 (isFiction == false) //check value of bool
+                Console.WriteLine("This book should be shelved with nonfiction.");
+
+        }//display
 
         }//class book
 
